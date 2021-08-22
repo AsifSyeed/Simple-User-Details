@@ -8,7 +8,7 @@
 import Foundation
 
 enum DataInputCellType {
-    case normal, profileImageView, radioOption, userInput
+    case normal, profileImageView, radioOption, userInput, radioButtonTitle
 }
 
 class DataModel {

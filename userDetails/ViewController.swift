@@ -23,8 +23,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         userTableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
         userTableView.register(UINib(nibName: "userDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "userDetailsTableViewCell")
         userTableView.register(UINib(nibName: "radioOptionTableViewCell", bundle: nil), forCellReuseIdentifier: "radioOptionTableViewCell")
-        
         userTableView.register(UINib(nibName: "UserInputTableViewCell", bundle: nil), forCellReuseIdentifier: "UserInputTableViewCell")
+        userTableView.register(UINib(nibName: "RadioButtonTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "RadioButtonTitleTableViewCell")
+        
         
         initTableData()
         userTableView.reloadData()
@@ -52,6 +53,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 cell.infoTitleLabel.text = model.fieldName ?? ""
                 cell.infoLabel.text = model.fieldValue ?? ""
+                
+                return cell
+            }
+        } else if model.cellType == .radioButtonTitle {
+            if let cell = userTableView.dequeueReusableCell(withIdentifier: "RadioButtonTitleTableViewCell") as? RadioButtonTitleTableViewCell {
+                
+                cell.radioButtonTitleUpdated.text = model.fieldValue ?? ""
                 
                 return cell
             }
@@ -136,24 +144,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         inputData.append(DataModel.initData(cellType: .normal, sectionName: "User Details", fieldName: "City: ", fieldValueCheck: false, fieldValue: "Dhaka"))
         inputData.append(DataModel.initData(cellType: .normal, sectionName: "User Details", fieldName: "Country: ", fieldValueCheck: false, fieldValue: "Bangladesh"))
         
-        tableDataModel.append(inputData)
+        inputData.append(DataModel.initData(cellType: .radioButtonTitle, sectionName: "User Details", fieldName: "", fieldValueCheck: false, fieldValue: "Project Type"))
         
-        inputData = []
-        
-        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "Project Type", fieldName: "", fieldValueCheck: false, fieldValue: "Local"))
-        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "Project Type", fieldName: "", fieldValueCheck: false, fieldValue: "Global"))
+        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "User Details", fieldName: "", fieldValueCheck: false, fieldValue: "Local"))
+        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "User Details", fieldName: "", fieldValueCheck: false, fieldValue: "Global"))
         
         tableDataModel.append(inputData)
         
         inputData = []
         
-        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "Designation", fieldName: "", fieldValueCheck: false, fieldValue: "Junior Engineer"))
-        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "Designation", fieldName: "", fieldValueCheck: false, fieldValue: "Mid Engineer"))
-        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "Designation", fieldName: "", fieldValueCheck: false, fieldValue: "Senior Engineer"))
+        inputData.append(DataModel.initData(cellType: .radioButtonTitle, sectionName: "More Details", fieldName: "", fieldValueCheck: false, fieldValue: "Designation"))
+        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "More Details", fieldName: "", fieldValueCheck: false, fieldValue: "Junior Engineer"))
+        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "More Details", fieldName: "", fieldValueCheck: false, fieldValue: "Mid Engineer"))
+        inputData.append(DataModel.initData(cellType: .radioOption, sectionName: "More Details", fieldName: "", fieldValueCheck: false, fieldValue: "Senior Engineer"))
         
-        tableDataModel.append(inputData)
-        
-        inputData = []
         inputData.append(DataModel.initData(cellType: .userInput, sectionName: "More Details", fieldName: "About", fieldValueCheck: false, fieldValue: ""))
         tableDataModel.append(inputData)
         

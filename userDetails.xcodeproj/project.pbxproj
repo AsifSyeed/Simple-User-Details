@@ -25,6 +25,8 @@
 		D678C6F026CE77F800D89EE3 /* radioOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D678C6EE26CE77F800D89EE3 /* radioOptionTableViewCell.xib */; };
 		D678C6F326CE7B9500D89EE3 /* UserInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678C6F126CE7B9500D89EE3 /* UserInputTableViewCell.swift */; };
 		D678C6F426CE7B9500D89EE3 /* UserInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D678C6F226CE7B9500D89EE3 /* UserInputTableViewCell.xib */; };
+		D681AE9E26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D681AE9C26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift */; };
+		D681AE9F26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D681AE9D26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		D678C6EE26CE77F800D89EE3 /* radioOptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = radioOptionTableViewCell.xib; sourceTree = "<group>"; };
 		D678C6F126CE7B9500D89EE3 /* UserInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputTableViewCell.swift; sourceTree = "<group>"; };
 		D678C6F226CE7B9500D89EE3 /* UserInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInputTableViewCell.xib; sourceTree = "<group>"; };
+		D681AE9C26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonTitleTableViewCell.swift; sourceTree = "<group>"; };
+		D681AE9D26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButtonTitleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				D678C6AC26CE66D900D89EE3 /* AppDelegate.swift */,
 				D678C6AE26CE66D900D89EE3 /* SceneDelegate.swift */,
 				D678C6B026CE66D900D89EE3 /* ViewController.swift */,
+				D681AE9C26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift */,
+				D681AE9D26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib */,
 				D678C6F126CE7B9500D89EE3 /* UserInputTableViewCell.swift */,
 				D678C6F226CE7B9500D89EE3 /* UserInputTableViewCell.xib */,
 				D678C6EB26CE70B300D89EE3 /* DataModel.swift */,
@@ -267,6 +273,7 @@
 				D678C6B926CE66DB00D89EE3 /* Assets.xcassets in Resources */,
 				D678C6E626CE6A0600D89EE3 /* userDetailsTableViewCell.xib in Resources */,
 				D678C6B426CE66D900D89EE3 /* Main.storyboard in Resources */,
+				D681AE9F26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib in Resources */,
 				D678C6F426CE7B9500D89EE3 /* UserInputTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +301,7 @@
 			files = (
 				D678C6B126CE66D900D89EE3 /* ViewController.swift in Sources */,
 				D678C6B726CE66D900D89EE3 /* userDetails.xcdatamodeld in Sources */,
+				D681AE9E26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift in Sources */,
 				D678C6E126CE671D00D89EE3 /* ImageTableViewCell.swift in Sources */,
 				D678C6E526CE6A0600D89EE3 /* userDetailsTableViewCell.swift in Sources */,
 				D678C6F326CE7B9500D89EE3 /* UserInputTableViewCell.swift in Sources */,
