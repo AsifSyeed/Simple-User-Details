@@ -119,8 +119,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         for (index, dataModel) in tableDataModel.enumerated() {
             if sectionNo == index {
                 for (rowIndex, itemModel) in dataModel.enumerated() {
-                    if  rowIndex != rowNo{
-                        itemModel.fieldValueCheck = false
+                    if itemModel.cellType == .radioOption {
+                        if  rowIndex != rowNo{
+                            itemModel.fieldValueCheck = false
+                        }
                     }
                 }
             }
