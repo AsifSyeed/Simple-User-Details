@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6730CCB26D4F8A20003389D /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6730CCA26D4F8A20003389D /* SummaryViewController.swift */; };
 		D678C6AD26CE66D900D89EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678C6AC26CE66D900D89EE3 /* AppDelegate.swift */; };
 		D678C6AF26CE66D900D89EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678C6AE26CE66D900D89EE3 /* SceneDelegate.swift */; };
 		D678C6B126CE66D900D89EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678C6B026CE66D900D89EE3 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6730CCA26D4F8A20003389D /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		D678C6A926CE66D900D89EE3 /* userDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = userDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D678C6AC26CE66D900D89EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D678C6AE26CE66D900D89EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				D678C6AC26CE66D900D89EE3 /* AppDelegate.swift */,
 				D678C6AE26CE66D900D89EE3 /* SceneDelegate.swift */,
 				D678C6B026CE66D900D89EE3 /* ViewController.swift */,
+				D6730CCA26D4F8A20003389D /* SummaryViewController.swift */,
 				D681AE9C26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift */,
 				D681AE9D26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib */,
 				D678C6F126CE7B9500D89EE3 /* UserInputTableViewCell.swift */,
@@ -303,6 +306,7 @@
 				D678C6B726CE66D900D89EE3 /* userDetails.xcdatamodeld in Sources */,
 				D681AE9E26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift in Sources */,
 				D678C6E126CE671D00D89EE3 /* ImageTableViewCell.swift in Sources */,
+				D6730CCB26D4F8A20003389D /* SummaryViewController.swift in Sources */,
 				D678C6E526CE6A0600D89EE3 /* userDetailsTableViewCell.swift in Sources */,
 				D678C6F326CE7B9500D89EE3 /* UserInputTableViewCell.swift in Sources */,
 				D678C6EF26CE77F800D89EE3 /* radioOptionTableViewCell.swift in Sources */,
