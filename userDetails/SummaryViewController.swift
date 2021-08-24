@@ -20,7 +20,8 @@ class SummaryViewController: UIViewController, UITableViewDataSource, UITableVie
         summaryTableView.dataSource = self
         
         summaryTableView.register(UINib(nibName: "ImageTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageTableViewCell")
-        
+        summaryTableView.register(UINib(nibName: "UserInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "UserInfoTableViewCell")
+        summaryTableView.register(UINib(nibName: "RadioButtonTitleTableViewCell", bundle: nil), forCellReuseIdentifier: "RadioButtonTitleTableViewCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,7 +41,32 @@ class SummaryViewController: UIViewController, UITableViewDataSource, UITableVie
                 cell.profileImageView.image = UIImage(named: model.fieldValue ?? "")
                 return cell
             }
+        } else if model.cellType == .userInput {
+            if let cell = summaryTableView.dequeueReusableCell(withIdentifier: "UserInfoTableViewCell") as? UserInfoTableViewCell {
+                cell.titleLabel.text = model.fieldName ?? ""
+                cell.userInfoLabel.text = model.fieldValue ?? ""
+                
+                return cell
+            }
+        } else if model.cellType == .radioButtonTitle {
+            if let cell = summaryTableView.dequeueReusableCell(withIdentifier: "RadioButtonTitleTableViewCell") as? RadioButtonTitleTableViewCell {
+                
+                cell.radioButtonTitleUpdated.text = model.fieldValue ?? ""
+                
+                return cell
+            }
+        } else if model.cellType == .radioOption {
+            
+            
+            if model.fieldValueCheck == true {
+                if let cell = summaryTableView.dequeueReusableCell(withIdentifier: "RadioButtonTitleTableViewCell") as? RadioButtonTitleTableViewCell {
+                    cell.radioButtonTitleUpdated.text = model.fieldValue ?? ""
+                    return cell
+                }
+            }
+            
         }
+        
         
         return UITableViewCell()
     }

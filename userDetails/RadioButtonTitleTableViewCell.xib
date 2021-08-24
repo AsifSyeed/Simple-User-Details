@@ -32,8 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PcR-o4-TuF" firstAttribute="centerY" secondItem="nHc-sa-ePp" secondAttribute="centerY" id="38a-Pp-RRi"/>
                             <constraint firstItem="PcR-o4-TuF" firstAttribute="centerX" secondItem="nHc-sa-ePp" secondAttribute="centerX" id="SCG-eE-xYl"/>
+                            <constraint firstAttribute="width" secondItem="nHc-sa-ePp" secondAttribute="height" multiplier="387:115" id="hCe-Yq-sCt"/>
                             <constraint firstItem="PcR-o4-TuF" firstAttribute="width" secondItem="nHc-sa-ePp" secondAttribute="width" multiplier="0.958656" id="ljO-VZ-6hu"/>
                             <constraint firstItem="PcR-o4-TuF" firstAttribute="top" secondItem="nHc-sa-ePp" secondAttribute="top" id="p2t-NF-iTE"/>
                         </constraints>
