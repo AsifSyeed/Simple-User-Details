@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D6730CCB26D4F8A20003389D /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6730CCA26D4F8A20003389D /* SummaryViewController.swift */; };
+		D6730CCE26D5039A0003389D /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6730CCC26D5039A0003389D /* UserInfoTableViewCell.swift */; };
+		D6730CCF26D5039A0003389D /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6730CCD26D5039A0003389D /* UserInfoTableViewCell.xib */; };
 		D678C6AD26CE66D900D89EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678C6AC26CE66D900D89EE3 /* AppDelegate.swift */; };
 		D678C6AF26CE66D900D89EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678C6AE26CE66D900D89EE3 /* SceneDelegate.swift */; };
 		D678C6B126CE66D900D89EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678C6B026CE66D900D89EE3 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		D6730CCA26D4F8A20003389D /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		D6730CCC26D5039A0003389D /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		D6730CCD26D5039A0003389D /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
 		D678C6A926CE66D900D89EE3 /* userDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = userDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D678C6AC26CE66D900D89EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D678C6AE26CE66D900D89EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				D678C6AC26CE66D900D89EE3 /* AppDelegate.swift */,
 				D678C6AE26CE66D900D89EE3 /* SceneDelegate.swift */,
 				D678C6B026CE66D900D89EE3 /* ViewController.swift */,
+				D6730CCC26D5039A0003389D /* UserInfoTableViewCell.swift */,
+				D6730CCD26D5039A0003389D /* UserInfoTableViewCell.xib */,
 				D6730CCA26D4F8A20003389D /* SummaryViewController.swift */,
 				D681AE9C26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift */,
 				D681AE9D26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib */,
@@ -277,6 +283,7 @@
 				D678C6E626CE6A0600D89EE3 /* userDetailsTableViewCell.xib in Resources */,
 				D678C6B426CE66D900D89EE3 /* Main.storyboard in Resources */,
 				D681AE9F26D23FAD00040B1D /* RadioButtonTitleTableViewCell.xib in Resources */,
+				D6730CCF26D5039A0003389D /* UserInfoTableViewCell.xib in Resources */,
 				D678C6F426CE7B9500D89EE3 /* UserInputTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6730CCE26D5039A0003389D /* UserInfoTableViewCell.swift in Sources */,
 				D678C6B126CE66D900D89EE3 /* ViewController.swift in Sources */,
 				D678C6B726CE66D900D89EE3 /* userDetails.xcdatamodeld in Sources */,
 				D681AE9E26D23FAD00040B1D /* RadioButtonTitleTableViewCell.swift in Sources */,

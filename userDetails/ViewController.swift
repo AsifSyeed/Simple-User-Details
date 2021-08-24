@@ -12,7 +12,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var userTableView: UITableView!
     @IBAction func nextButtonAction(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SummaryViewController") as! SummaryViewController
         
+        vc.showDataModel = tableDataModel
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
     
     var tableDataModel = [[DataModel]]()

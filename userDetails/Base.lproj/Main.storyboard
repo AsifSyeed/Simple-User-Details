@@ -29,7 +29,6 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czj-OC-pOg"/>
-                                    <segue destination="I0x-gn-7su" kind="show" id="4tR-gA-GvG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,14 +57,29 @@
         <!--User Summary-->
         <scene sceneID="0O2-b8-cem">
             <objects>
-                <viewController id="I0x-gn-7su" customClass="SummaryViewController" customModule="userDetails" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SummaryViewController" wantsFullScreenLayout="YES" id="I0x-gn-7su" customClass="SummaryViewController" customModule="userDetails" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lcm-b2-1jP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3CF-sV-DGn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="StM-3B-c7G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="StM-3B-c7G" firstAttribute="bottom" secondItem="3CF-sV-DGn" secondAttribute="bottom" id="VDu-ev-GDY"/>
+                            <constraint firstItem="StM-3B-c7G" firstAttribute="trailing" secondItem="3CF-sV-DGn" secondAttribute="trailing" id="Y9M-56-XV9"/>
+                            <constraint firstItem="3CF-sV-DGn" firstAttribute="top" secondItem="StM-3B-c7G" secondAttribute="top" id="dXi-82-FI9"/>
+                            <constraint firstItem="3CF-sV-DGn" firstAttribute="leading" secondItem="StM-3B-c7G" secondAttribute="leading" id="iIy-GO-4Sw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="User Summary" id="uuP-aH-Isb"/>
+                    <connections>
+                        <outlet property="summaryTableView" destination="3CF-sV-DGn" id="n9B-Oq-E1Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chf-sK-dvm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,6 +88,7 @@
         <!--Navigation Controller-->
         <scene sceneID="fs9-Js-ZFR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbI-o1-ihe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SR4-uV-5kV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UCZ-6m-3Rf">
@@ -85,7 +100,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f9E-4u-m3a"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NbI-o1-ihe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="88.392857142857139"/>
         </scene>

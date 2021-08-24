@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FB1A0376-5056-4664-9455-B7A34118AAB4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "userDetails/ViewController.swift"
@@ -17,6 +17,130 @@
             startingLineNumber = "15"
             endingLineNumber = "15"
             landmarkName = "nextButtonAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "userDetails/SummaryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "SummaryViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC - dc704c7a95315e24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userDetails.SummaryViewController.showDataModel.getter : Swift.Optional&lt;Swift.Array&lt;Swift.Array&lt;userDetails.DataModel&gt;&gt;&gt;"
+                  moduleName = "userDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bs-236/Desktop/projects/userDetails/userDetails/SummaryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC - ec1e3e62cd0a1218"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userDetails.SummaryViewController.showDataModel.setter : Swift.Optional&lt;Swift.Array&lt;Swift.Array&lt;userDetails.DataModel&gt;&gt;&gt;"
+                  moduleName = "userDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bs-236/Desktop/projects/userDetails/userDetails/SummaryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC - fbb1144da383fdd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userDetails.SummaryViewController.showDataModel.modify : Swift.Optional&lt;Swift.Array&lt;Swift.Array&lt;userDetails.DataModel&gt;&gt;&gt;"
+                  moduleName = "userDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bs-236/Desktop/projects/userDetails/userDetails/SummaryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC - 1f9d25b46fb4b725"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userDetails.SummaryViewController.showDataModel.modify : Swift.Optional&lt;Swift.Array&lt;Swift.Array&lt;userDetails.DataModel&gt;&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "userDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bs-236/Desktop/projects/userDetails/userDetails/SummaryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC - fb32292b9ae80038"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userDetails.SummaryViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; userDetails.SummaryViewController"
+                  moduleName = "userDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bs-236/Desktop/projects/userDetails/userDetails/SummaryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC - d35508a250cb2084"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "userDetails.SummaryViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;userDetails.SummaryViewController&gt;"
+                  moduleName = "userDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bs-236/Desktop/projects/userDetails/userDetails/SummaryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9748288A-F60A-4D63-AA1F-8735C8050DF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "userDetails/SummaryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
