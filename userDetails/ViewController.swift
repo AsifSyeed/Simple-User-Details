@@ -11,6 +11,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     @IBOutlet weak var userTableView: UITableView!
+    @IBAction func nextButtonAction(_ sender: Any) {
+        
+    }
     
     var tableDataModel = [[DataModel]]()
     

@@ -17,17 +17,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-Sy-ssZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="740"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-Ft-eL8">
+                                <rect key="frame" x="146" y="792" width="122" height="59"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czj-OC-pOg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hfG-Sy-ssZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="73b-fL-IQY"/>
                             <constraint firstItem="hfG-Sy-ssZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dxf-4b-b40"/>
+                            <constraint firstItem="5mQ-Ft-eL8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0658482" id="FDN-qO-pq0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hfG-Sy-ssZ" secondAttribute="trailing" id="L4K-pw-YSN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hfG-Sy-ssZ" secondAttribute="bottom" id="XOO-qs-w4e"/>
+                            <constraint firstItem="5mQ-Ft-eL8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.294686" id="NlX-fT-BcL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5mQ-Ft-eL8" secondAttribute="bottom" constant="11" id="caQ-eM-HeV"/>
+                            <constraint firstItem="5mQ-Ft-eL8" firstAttribute="top" secondItem="hfG-Sy-ssZ" secondAttribute="bottom" constant="8" id="crk-wD-fQz"/>
+                            <constraint firstItem="5mQ-Ft-eL8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ya3-DW-SOZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -36,10 +51,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26" y="89"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
