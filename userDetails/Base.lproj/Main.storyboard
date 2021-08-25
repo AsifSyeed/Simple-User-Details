@@ -29,6 +29,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czj-OC-pOg"/>
+                                    <segue destination="I0x-gn-7su" kind="show" id="1jI-HE-jez"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3CF-sV-DGn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -76,7 +77,9 @@
                             <constraint firstItem="3CF-sV-DGn" firstAttribute="leading" secondItem="StM-3B-c7G" secondAttribute="leading" id="iIy-GO-4Sw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="User Summary" id="uuP-aH-Isb"/>
+                    <navigationItem key="navigationItem" title="User Summary" id="uuP-aH-Isb">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="PZc-ZV-zDA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="summaryTableView" destination="3CF-sV-DGn" id="n9B-Oq-E1Y"/>
                     </connections>
@@ -88,7 +91,6 @@
         <!--Navigation Controller-->
         <scene sceneID="fs9-Js-ZFR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NbI-o1-ihe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SR4-uV-5kV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UCZ-6m-3Rf">
@@ -100,6 +102,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f9E-4u-m3a"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbI-o1-ihe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="88.392857142857139"/>
         </scene>

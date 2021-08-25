@@ -14,6 +14,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func nextButtonAction(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SummaryViewController") as! SummaryViewController
         
+        for (index, dataModel) in tableDataModel.enumerated() {
+    
+            for (rowIndex, itemModel) in dataModel.enumerated() {
+                if  itemModel.cellType == .profileImageView {
+                    summaryModel.append(DataModel.initData(cellType: .profileImageView, sectionName: "", fieldName: "Profile Image", fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: itemModel.fieldValue))
+                } else if itemModel.cellType == .userInput {
+                    summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: itemModel.fieldName, fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: itemModel.fieldValue))
+                } else if itemModel.cellType == .radioOption {
+                    if itemModel.fieldValueCheck == true {
+                        if itemModel.sectionName == "User Details" {
+                            summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: "Project Type: ", fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: itemModel.fieldValue))
+                        } else if itemModel.sectionName == "More Details" {
+                            summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: "Designation: ", fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: itemModel.fieldValue))
+                        }
+                    }
+                }
+            }
+        }
+        
         vc.showDataModel = summaryModel
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
@@ -54,14 +73,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let cell = userTableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell") as? ImageTableViewCell {
                 cell.profileImageView.image = UIImage(named: model.fieldValue ?? "")
                 
-                summaryModel.append(DataModel.initData(cellType: .profileImageView, sectionName: "", fieldName: "", fieldValueCheck: false, textFieldPlaceholderText: "", fieldValue: model.fieldValue))
                 return cell
             }
         }  else if model.cellType == .radioButtonTitle {
             if let cell = userTableView.dequeueReusableCell(withIdentifier: "RadioButtonTitleTableViewCell") as? RadioButtonTitleTableViewCell {
                 
                 cell.radioButtonTitleUpdated.text = model.fieldValue ?? ""
-                
                 
                 
                 return cell
@@ -81,11 +98,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     cell.radioButtonOutlet.setImage(UIImage(systemName: "circle.fill"), for: .normal)
                     cell.radioButtonOutlet.tintColor = .black
                     
-                    if model.cellType == .userInput {
-                        summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: "Project type: ", fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: cell.optionLabel.text))
-                    } else {
-                        summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: "Designation: ", fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: cell.optionLabel.text))
-                    }
+                     
                 }
                 
                 
@@ -98,8 +111,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.infoTitleLabel.text = model.fieldName ?? ""
                 cell.inputTextField.text = model.fieldValue ?? ""
                 cell.inputTextField.placeholder = model.textFieldPlaceholderText ?? ""
-                
-                summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: cell.infoTitleLabel.text, fieldValueCheck: false, textFieldPlaceholderText: "", fieldValue: cell.inputTextField.text))
                 
                 cell.inputTextField.delegate = self
                 cell.inputTextField.tag = (indexPath.section*100) + indexPath.row
