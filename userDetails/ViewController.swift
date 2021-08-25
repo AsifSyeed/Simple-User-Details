@@ -14,13 +14,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func nextButtonAction(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SummaryViewController") as! SummaryViewController
         
-        vc.showDataModel = tableDataModel
+        vc.showDataModel = summaryModel
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
     
     var tableDataModel = [[DataModel]]()
-    
+    var summaryModel = [DataModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,12 +53,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if model.cellType == .profileImageView {
             if let cell = userTableView.dequeueReusableCell(withIdentifier: "ImageTableViewCell") as? ImageTableViewCell {
                 cell.profileImageView.image = UIImage(named: model.fieldValue ?? "")
+                
+                summaryModel.append(DataModel.initData(cellType: .profileImageView, sectionName: "", fieldName: "", fieldValueCheck: false, textFieldPlaceholderText: "", fieldValue: model.fieldValue))
                 return cell
             }
         }  else if model.cellType == .radioButtonTitle {
             if let cell = userTableView.dequeueReusableCell(withIdentifier: "RadioButtonTitleTableViewCell") as? RadioButtonTitleTableViewCell {
                 
                 cell.radioButtonTitleUpdated.text = model.fieldValue ?? ""
+                
+                
                 
                 return cell
             }
@@ -76,6 +80,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 else {
                     cell.radioButtonOutlet.setImage(UIImage(systemName: "circle.fill"), for: .normal)
                     cell.radioButtonOutlet.tintColor = .black
+                    
+                    if model.cellType == .userInput {
+                        summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: "Project type: ", fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: cell.optionLabel.text))
+                    } else {
+                        summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: "Designation: ", fieldValueCheck: true, textFieldPlaceholderText: "", fieldValue: cell.optionLabel.text))
+                    }
                 }
                 
                 
@@ -88,6 +98,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.infoTitleLabel.text = model.fieldName ?? ""
                 cell.inputTextField.text = model.fieldValue ?? ""
                 cell.inputTextField.placeholder = model.textFieldPlaceholderText ?? ""
+                
+                summaryModel.append(DataModel.initData(cellType: .normal, sectionName: "", fieldName: cell.infoTitleLabel.text, fieldValueCheck: false, textFieldPlaceholderText: "", fieldValue: cell.inputTextField.text))
                 
                 cell.inputTextField.delegate = self
                 cell.inputTextField.tag = (indexPath.section*100) + indexPath.row

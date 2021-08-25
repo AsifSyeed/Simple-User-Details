@@ -30,10 +30,10 @@
             filePath = "userDetails/SummaryViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "SummaryViewController"
-            landmarkType = "3">
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "summaryTableView"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "B9264C33-DB5F-4BDB-8F6A-0F57887909AC - dc704c7a95315e24"
@@ -138,10 +138,10 @@
             filePath = "userDetails/SummaryViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "showDataModel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
